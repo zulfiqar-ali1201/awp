@@ -1,0 +1,50 @@
+	<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Console Based Programs</title>
+	
+		
+	</head>
+	<body>
+		<p id="para"></p>
+
+		<ul id="citylist">
+			<li>Karachi</li>
+			<li>Lahore</li>
+		</ul>
+
+		<button type="button" onClick="myfunction()" value="Click me"> Click Me </button>
+		<button type="button" onClick="changeStyle()" value="Click me"> Change style </button>
+		<button type="button" onClick="addItem()" value="Click me"> Add Item</button>
+
+
+	
+
+		<script type="text/javascript">
+			document.getElementById("para").innerHTML = "Produced by Javascript";
+			
+			//function
+			function myfunction(){
+
+				let content=document.getElementById("para")
+				content.textContent="I am updated by JavaScript Function"
+			}
+
+			function changeStyle(){
+				stl=document.getElementById("para")
+				stl.style.backgroundColor="Yellow"
+				stl.style.color="red"
+
+			}
+
+			function addItem(){
+				let items=document.getElementById("citylist")
+				let newItem=document.createElement("li")
+				newItem.textContent="Quetta"
+				items.appendChild(newItem)
+			}
+
+			
+		</script>
+	</body>
+</html>	

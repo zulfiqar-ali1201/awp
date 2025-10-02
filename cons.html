@@ -1,0 +1,44 @@
+	<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Console Based Programs</title>
+	</head>
+	<body>
+		<script>
+			var num1=43
+			var num2=76
+			console.log(num1+num2)
+
+			//using of let, checking an odd or Even number
+			let num=7
+			if(num%2==0){
+				console.log(num + " is an Even Number")
+			}
+			else
+			{	
+				console.log(num + " is an odd Number")
+			}
+
+			numbers=[55,34,65,23,65,76,23,65,76]
+			max=0
+			for(let i=0; i<numbers.length; i++){
+				if(numbers[i]>=max){
+					max=numbers[i]	
+				}
+				else{
+					max=max				}
+				
+			}
+			console.log(max+" is the highest number")
+
+
+			//functions in javaScript
+			function multiplication(x, y){
+				return x*y	
+			}
+
+			mul=multiplication(7,8)
+			console.log("The Multiplicaiton result is " + mul)
+		</script>
+	</body>
+</html>	
